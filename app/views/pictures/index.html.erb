@@ -1,40 +1,40 @@
 <h1>Pictures</h1>
 
-<%= link_to("New Picture", "/pictures/new") %>
+<%= link_to 'New Picture', new_picture_path %>
 
 <h2>Most Recent Pictures</h2>
 
 <% @most_recent.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), pictures_path(picture.id) %>
+  <%= link_to image_tag(picture.url), picture_path(picture.id) %>
 <% end %>
 
 <h2>A month ago...</h2>
 <% @a_month_old.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), pictures_path(picture.id) %>
+  <%= link_to image_tag(picture.url), picture_path(picture.id) %>
 <% end %>
 
 <h2>2017</h2>
 <% @pics_from_2017.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), pictures_path(picture.id) %>
+  <%= link_to image_tag(picture.url), picture_path(picture.id) %>
 <% end %>
 
 <h2>2016</h2>
 <% @pics_from_2016.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), pictures_path(picture.id) %>
+  <%= link_to image_tag(picture.url), picture_path(picture.id) %>
 <% end %>
 
 <h2>2015</h2>
 <% @pics_from_2015.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), pictures_path(picture.id) %>
+  <%= link_to image_tag(picture.url), picture_path(picture.id) %>
 <% end %>
 
 <h2>2014</h2>
 <% @pics_from_2014.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), pictures_path(picture.id) %>
+  <%= link_to image_tag(picture.url), picture_path(picture.id) %>
 <% end %>
