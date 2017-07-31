@@ -1,4 +1,4 @@
-<%= link_to 'Back to Pictures', pictures_path %> | <%= link_to 'Edit', picture_path(picture.id) %> | <%= link_to("Delete", "/pictures/#{@picture.id}", method: :delete, data: {confirm: "Are you sure you want to delete this picture?"})  %>
+<%= link_to 'Back to Pictures', pictures_path %> | <%= link_to 'Edit', edit_picture_path(@picture.id) %> | <%= link_to "Delete", picture_path(@picture.id), method: :delete, data: {confirm: "Are you sure you want to delete this picture?"}  %>
 
 <p><%= @picture.title %>, <%= @picture.artist %></p>
 <%= image_tag(@picture.url) %>
