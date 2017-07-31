@@ -21,17 +21,10 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(picture_params)
-    #
-    # @picture.title = params[:picture][:title]
-    # @picture.artist = params[:picture][:artist]
-    # @picture.url = params[:picture][:url]
-
 
     if @picture.save
-      # if the picture gets saved, generate a get request to "/pictures" (the index)
-      redirect_to "/pictures"
+      redirect_to pictures_path
     else
-      # otherwise render new.html.erb
       render :new
     end
   end
@@ -42,12 +35,6 @@ class PicturesController < ApplicationController
 
   def update
     @picture = Picture.find(params[:id])
-    # @picture.save(picture_params)
-    #
-    # @picture.title = params[:picture][:title]
-    # @picture.artist = params[:picture][:artist]
-    # @picture.url = params[:picture][:url]
-
 
     if @picture.update(picture_params)
       redirect_to picture_path(@picture.id)
@@ -59,7 +46,7 @@ class PicturesController < ApplicationController
   def destroy
     @picture = Picture.find(params[:id])
     @picture.destroy
-    redirect_to "/pictures"
+    redirect_to pictures_path
   end
 
   private
