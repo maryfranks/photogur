@@ -13,7 +13,7 @@ html {
 }
 
 .photo {
-  float: left;
+  float: right;
 }
 
 div {
@@ -54,4 +54,12 @@ footer table {
 
 footer td {
   vertical-align: top;
+}
+
+.float-clear {
+  clear: both;
+}
+
+h2 {
+  float: none;
 }
