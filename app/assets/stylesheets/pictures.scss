@@ -2,18 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html {
+// color palette
+// #28697A
+// #242426
+// #EDEDF4
 
+html {
+ color: #242426;
+ background-color: #EDEDF4;
+}
+
+header {
+  background-color: #28697A;
 }
 
 .photo img {
-  width: 300px;
+  width: 400px;
+  height: 300px;
   display: inline-block;
   margin: 5px 1px;
 }
 
 .photo {
-  float: right;
+  float: left;
 }
 
 div {
@@ -22,7 +33,7 @@ div {
 
 footer {
   clear: both;
-  background-color: #545458;
+  background-color: #9B9B9E;
 }
 
 footer p, a {
@@ -58,8 +69,4 @@ footer td {
 
 .float-clear {
   clear: both;
-}
-
-h2 {
-  float: none;
 }

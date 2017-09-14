@@ -4,7 +4,7 @@
 
 <div class="most-recent">
 
-  <h2>Most Recent Pictures</h2><br>
+  <h2 class="float-clear">Most Recent Pictures</h2><br>
 
   <% @most_recent.each do |picture| %>
     <div class="photo">
@@ -17,7 +17,7 @@
 
 </div class="float-clear month-ago">
 
-  <h2>A month ago...</h2><br>
+  <h2 class="float-clear">A month ago...</h2><br>
 
   <% @a_month_old.each do |picture| %>
     <div class="photo">
@@ -30,7 +30,7 @@
 
 <div class="float-clear pics-2017">
 
-  <h2>2017</h2>
+  <h2 class="float-clear">2017</h2>
 
   <% @pics_from_2017.each do |picture| %>
     <div class="photo">
@@ -43,7 +43,7 @@
 
 <div class="float-clear pics-2016">
 
-  <h2>2016</h2>
+  <h2 class="float-clear">2016</h2>
   <% @pics_from_2016.each do |picture| %>
     <div class="photo">
       <p><%= picture.title %>, <%= picture.artist %></p>
@@ -55,7 +55,7 @@
 
 <div class="float-clear pics-2015">
 
-  <h2>2015</h2>
+  <h2 class="float-clear">2015</h2>
   <% @pics_from_2015.each do |picture| %>
     <div class="photo">
       <p><%= picture.title %>, <%= picture.artist %></p>
@@ -67,7 +67,7 @@
 
 <div class="float-clear pics-2014">
 
-  <h2>2014</h2>
+  <h2 class="float-clear">2014</h2>
   <% @pics_from_2014.each do |picture| %>
     <div class="photo">
       <p><%= picture.title %>, <%= picture.artist %></p>
