@@ -14,6 +14,8 @@
 // #9B9B9E
 // #E3E3E4
 
+// ---------------- General Styles -------------------------
+
 html {
  color: #242426;
  background-color: #EDEDF4;
@@ -21,9 +23,13 @@ html {
  font-size: 20px;
 }
 
+// main {
+//   margin-top: 180px;
+// }
+
 header {
   background-color: #28697A;
-  position: fixed;
+  // position: fixed;
   width: 100%;
 }
 
@@ -38,38 +44,47 @@ h2 {
   font-size: 30px;
 }
 
+// --------------------- Header Styles -------------------------
+
 .left h1 {
   font-size: 90px;
   color: #EDEDF4;
   padding: 10px;
+  margin-bottom: 10px;
   letter-spacing: 3px;
 }
 
 .left p {
   margin-left: 20px;
-  padding: 5px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.main-head {
-  float: left;
-}
+// .main-head {
+//   float: left;
+// }
 
 .log-in {
-  margin-left: 60%;
+  // margin-left: 60%;
+  display: none;
 }
 
 .right p {
-  margin-top: 20px;
-  margin-right: 20px;
+  // margin-top: 20px;
+  // margin-right: 20px;
   text-align: right;
+  margin-bottom: 50px;
 }
 
 .right a {
-  margin-top: 20px;
-  margin-right: 20px;
+  // margin-top: 20px;
+  // margin-right: 20px;
   text-align: right;
   color: #242426;
 }
+
+// -------------- pictures index styles -------------------
 
 .photo img {
   width: 400px;
@@ -88,6 +103,7 @@ div {
   display: block;
 }
 
+// ------------------ Footer Styles -------------------
 footer {
   clear: both;
   background-color: #9B9B9E;
@@ -108,13 +124,13 @@ footer p, footer a {
 }
 
 .copy {
-  margin-right: 40px;
+  margin-right: 90px;
 }
 
 .icon {
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer table {
@@ -123,6 +139,7 @@ footer table {
 
 footer td {
   vertical-align: top;
+  padding: 15px;
 }
 
 .float-clear {

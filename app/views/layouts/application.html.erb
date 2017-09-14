@@ -11,14 +11,14 @@
   <header>
     <div class="left main-head">
       <h1>Photogur</h1>
-      <p>life in pictures</p>
+      <p>becuase pictures are awesome!</p>
     </div>
     <div class="right main-head log-in">
     <p class="userinfo">
       <% if current_user %>
-      Signed in as <%= current_user.email %>. <%= link_to "Log out", session_path("current"), :method => :delete %>
+        Signed in as <%= current_user.email %>. <%= link_to "Log out", session_path("current"), :method => :delete %>
       <% else %>
-      <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
+        <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
       <% end %>
     </p>
   </div>

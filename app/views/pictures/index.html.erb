@@ -1,20 +1,27 @@
+<main>
+
 <h1>Pictures</h1>
 
 <%= link_to 'New Picture', new_picture_path %>
 
-<div class="most-recent">
+<% if @most_recent.count > 0 %>
 
-  <h2 class="float-clear">Most Recent Pictures</h2><br>
+  <div class="most-recent">
 
-  <% @most_recent.each do |picture| %>
-    <div class="photo">
-      <p><%= picture.title %>, <%= picture.artist %></p>
-      <%= link_to image_tag(picture.url), picture_path(picture.id) %>
-    </div>
-  <% end %>
+    <h2 class="float-clear">Most Recent Pictures</h2><br>
 
-<div>
+    <% @most_recent.each do |picture| %>
+      <div class="photo">
+        <p><%= picture.title %>, <%= picture.artist %></p>
+        <%= link_to image_tag(picture.url), picture_path(picture.id) %>
+      </div>
+    <% end %>
 
+  <div>
+
+<% end %>
+
+<% if @a_month_old.count > 0 %>
 </div class="float-clear month-ago">
 
   <h2 class="float-clear">A month ago...</h2><br>
@@ -27,6 +34,8 @@
   <% end %>
 
 </div>
+
+<% end %>
 
 <div class="float-clear pics-2017">
 
@@ -76,3 +85,5 @@
   <% end %>
 
 </div>
+
+</main>
