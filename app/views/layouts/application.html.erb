@@ -14,11 +14,15 @@
       <% else %>
       <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
       <% end %>
+    </p>
   </header>
 
   <%= yield %>
 
-  </p>
-
+  <footer>
+    <a href="http://www.maryfranks.me" class="copyright">&copy; Mary Franks</a>
+    <a href="https://github.com/maryfranks/photogur"><%= image_tag "github.png" %></a>
+    <a href="https://www.linkedin.com/in/maryfranks/"><%= image_tag "linkedin.png" %></a>
+  </footer>
 </body>
 </html>
