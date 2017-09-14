@@ -23,24 +23,52 @@ html {
 
 header {
   background-color: #28697A;
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
   font-family: 'Raleway', sans-serif;
   color: #28697A;
-}
-
-h1 {
   font-size: 80px;
 }
+
 
 h2 {
   font-size: 30px;
 }
 
-header h1 {
+.left h1 {
   font-size: 90px;
   color: #EDEDF4;
+  padding: 10px;
+  letter-spacing: 3px;
+}
+
+.left p {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.main-head {
+  float: left;
+}
+
+.log-in {
+  margin-left: 60%;
+}
+
+.right p {
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+.right a {
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: right;
+  color: #242426;
 }
 
 .photo img {
@@ -48,7 +76,7 @@ header h1 {
   height: 300px;
   display: inline-block;
   margin: 5px 1px;
-  box-shadow: 0 3px 3px 0 #E3E3E4, 0 6px 10px 0;
+  box-shadow: 0 4px 8px 0px #6c6c6e, 0 6px 20px 0 #E3E3E4;
 }
 
 .photo {
@@ -65,7 +93,7 @@ footer {
   background-color: #9B9B9E;
 }
 
-footer p, a {
+footer p, footer a {
   text-align: center;
   font-size: 18pt;
   color: #242426;
