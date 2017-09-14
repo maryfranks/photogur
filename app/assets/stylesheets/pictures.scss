@@ -2,18 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// fonts
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Lora', serif;
+
 // color palette
 // #28697A
 // #242426
 // #EDEDF4
+// #9B9B9E
 
 html {
  color: #242426;
  background-color: #EDEDF4;
+ font-family: 'Roboto Condensed', sans-serif;
+ font-size: 30px;
 }
 
 header {
   background-color: #28697A;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #28697A;
+}
+
+header h1 {
+  font-size: 80px;
+  color: #EDEDF4;
 }
 
 .photo img {
@@ -25,6 +43,7 @@ header {
 
 .photo {
   float: left;
+  padding: 5px;
 }
 
 div {
@@ -40,6 +59,7 @@ footer p, a {
   text-align: center;
   font-size: 18pt;
   color: #242426;
+  font-family: 'Lora', serif;
 }
 
 .copyright {
