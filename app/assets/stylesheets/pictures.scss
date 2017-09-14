@@ -24,7 +24,34 @@ footer {
   clear: both;
   background-color: #545458;
 }
-.copyright {
-  font-size: 12pt;
+
+footer p, a {
+  text-align: center;
+  font-size: 18pt;
   color: #242426;
+}
+
+.copyright {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: center;
+  color: #242426;
+}
+
+.copy {
+  margin-right: 40px;
+}
+
+.icon {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer table {
+  margin: auto;
+}
+
+footer td {
+  vertical-align: top;
 }
