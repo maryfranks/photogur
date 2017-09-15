@@ -23,9 +23,9 @@ html {
  font-size: 20px;
 }
 
-// main {
-//   margin-top: 180px;
-// }
+main {
+  margin-left: 3%;
+}
 
 header {
   background-color: #28697A;
@@ -37,6 +37,8 @@ h1 {
   font-family: 'Raleway', sans-serif;
   color: #28697A;
   font-size: 80px;
+  padding: 10px;
+  text-align: center;
 }
 
 
@@ -52,6 +54,7 @@ h2 {
   padding: 10px;
   margin-bottom: 10px;
   letter-spacing: 3px;
+  text-align: left;
 }
 
 .left p {
@@ -86,6 +89,11 @@ h2 {
 
 // -------------- pictures index styles -------------------
 
+.new-pic {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .photo img {
   width: 400px;
   height: 300px;
@@ -114,17 +122,19 @@ footer p, footer a {
   font-size: 18pt;
   color: #242426;
   font-family: 'Lora', serif;
+  text-decoration: none;
 }
 
 .copyright {
-  display: inline-block;
-  margin-top: 10px;
+  // display: inline-block;
+  margin-top: 8px;
   text-align: center;
   color: #242426;
 }
 
 .copy {
   margin-right: 90px;
+  margin-top: 8px;
 }
 
 .icon {
