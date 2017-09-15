@@ -22,68 +22,86 @@
 <% end %>
 
 <% if @a_month_old.count > 0 %>
-</div class="float-clear month-ago">
 
-  <h2 class="float-clear">A month ago...</h2><br>
+  </div class="float-clear month-ago">
 
-  <% @a_month_old.each do |picture| %>
-    <div class="photo">
-      <p><%= picture.title %>, <%= picture.artist %></p>
-      <%= link_to image_tag(picture.url), picture_path(picture.id) %>
-    </div>
-  <% end %>
+    <h2 class="float-clear">A month ago...</h2><br>
 
-</div>
+    <% @a_month_old.each do |picture| %>
+      <div class="photo">
+        <p><%= picture.title %>, <%= picture.artist %></p>
+        <%= link_to image_tag(picture.url), picture_path(picture.id) %>
+      </div>
+    <% end %>
+
+  </div>
 
 <% end %>
 
-<div class="float-clear pics-2017">
+<% if @pics_from_2017.count > 0 %>
 
-  <h2 class="float-clear">2017</h2>
+  <div class="float-clear pics-2017">
 
-  <% @pics_from_2017.each do |picture| %>
-    <div class="photo">
-      <p><%= picture.title %>, <%= picture.artist %></p>
-      <%= link_to image_tag(picture.url), picture_path(picture.id) %>
-    </div>
-  <% end %>
+    <h2 class="float-clear">Pictures from 2017</h2>
 
-</div>
+    <% @pics_from_2017.each do |picture| %>
+      <div class="photo">
+        <p><%= picture.title %>, <%= picture.artist %></p>
+        <%= link_to image_tag(picture.url), picture_path(picture.id) %>
+      </div>
 
-<div class="float-clear pics-2016">
+    <% end %>
 
-  <h2 class="float-clear">2016</h2>
-  <% @pics_from_2016.each do |picture| %>
-    <div class="photo">
-      <p><%= picture.title %>, <%= picture.artist %></p>
-      <%= link_to image_tag(picture.url), picture_path(picture.id) %>
-    </div>
-  <% end %>
+  </div>
 
-</div>
+<% end %>
 
-<div class="float-clear pics-2015">
+<% if @pics_from_2016.count > 0 %>
 
-  <h2 class="float-clear">2015</h2>
-  <% @pics_from_2015.each do |picture| %>
-    <div class="photo">
-      <p><%= picture.title %>, <%= picture.artist %></p>
-      <%= link_to image_tag(picture.url), picture_path(picture.id) %>
-    </div>
-  <% end %>
+  <div class="float-clear pics-2016">
 
-</div>
+    <h2 class="float-clear">Pictures from 2016</h2>
+    <% @pics_from_2016.each do |picture| %>
+      <div class="photo">
+        <p><%= picture.title %>, <%= picture.artist %></p>
+        <%= link_to image_tag(picture.url), picture_path(picture.id) %>
+      </div>
+    <% end %>
 
-<div class="float-clear pics-2014">
+  </div>
 
-  <h2 class="float-clear">2014</h2>
-  <% @pics_from_2014.each do |picture| %>
-    <div class="photo">
-      <p><%= picture.title %>, <%= picture.artist %></p>
-      <%= link_to image_tag(picture.url), picture_path(picture.id) %>
-    </div>
-  <% end %>
+<% end %>
 
-</div>
+<% if @pics_from_2015.count > 0 %>
+
+  <div class="float-clear pics-2015">
+
+    <h2 class="float-clear">Pictures from 2015</h2>
+    <% @pics_from_2015.each do |picture| %>
+      <div class="photo">
+        <p><%= picture.title %>, <%= picture.artist %></p>
+        <%= link_to image_tag(picture.url), picture_path(picture.id) %>
+      </div>
+    <% end %>
+
+  </div>
+
+<% end %>
+
+<% if @pics_from_2014.count > 0 %>
+
+  <div class="float-clear pics-2014">
+
+    <h2 class="float-clear">Pictures from 2014</h2>
+    <% @pics_from_2014.each do |picture| %>
+      <div class="photo">
+        <p><%= picture.title %>, <%= picture.artist %></p>
+        <%= link_to image_tag(picture.url), picture_path(picture.id) %>
+      </div>
+    <% end %>
+
+  </div>
+
+<% end %>
 
 </main>
