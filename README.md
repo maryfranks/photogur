@@ -13,8 +13,5 @@ Check it out live on
 
 The project is still a work in progress and I am always open to feedback and / or suggestions for how I could improve the code.  
 
-Feel free to reach out:
-
-http://maryfranks.me
-
-[I'm on LinkedIn](https://www.linkedin.com/in/maryfranks/)
+**Reach out**:
+[My website](http://maryfranks.me) | [I'm on LinkedIn](https://www.linkedin.com/in/maryfranks/)
